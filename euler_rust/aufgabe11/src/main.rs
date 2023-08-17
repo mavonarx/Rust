@@ -34,7 +34,7 @@ fn main() {
     for row in 3..20 {
         for col in 0..17 {
             let product = grid[row][col]
-                * grid[row - 1][col + 1]
+                * grid[row  - 1][col + 1]
                 * grid[row - 2][col + 2]
                 * grid[row - 3][col + 3];
             maxproduct = update_max(product, maxproduct);
